@@ -1,0 +1,389 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html{
+    scroll-behavior:smooth;
+   
+}
+
+
+
+body {
+    background: #111844;
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+
+
+/* header part */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #2d305f;
+}
+
+#logo a {
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+}
+
+#menu {
+    padding: 0.5rem 1rem;
+}
+
+ul {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    background: #2d305f;
+}
+
+
+ul li a {
+    background: #2d305f;
+    color: white;
+    text-decoration: none;
+}
+
+
+ul li a:hover {
+    background: #2d305f;
+    color: rgb(189, 189, 198);
+    text-decoration: none;
+}
+
+
+/* hero section */
+
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    /* gap: 20px; */
+}
+
+
+.hero {
+    flex: 6;
+    margin-left: 60px;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 1.5rem;
+}
+
+
+.hero-image {
+    flex: 4;
+
+    width: 320px;
+    height: 320px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+
+    background-image: url("images/hero image.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    border-radius: 60%;
+}
+
+#name {
+    color: #f9c74f;
+}
+
+#element {
+    color: #f9c74f;
+    font-size: 1.5rem;
+}
+
+/* about section */
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+    height: 100vh;
+    gap: 20px;
+
+}
+
+.about {
+    flex: 6;
+    margin-left: 60px;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 1rem;
+}
+
+.about-image{
+    flex:4;
+    margin-left: 60px;
+    height: 520px;
+    width: 320px;
+    background-image: url("images/harsh.png");
+    background-size: cover;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+
+
+/* projects */
+
+
+.projects-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 80px 8%;
+    background: #111844;
+}
+#projects{
+    min-height: 100vh;
+    padding: 80px 0;
+    background: #111844;
+}
+
+.section-title{
+    text-align: center;
+    font-size: 32px;
+    color: #ffffff;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.section-title::after{
+    content: "";
+    width: 90px;
+    height: 4px;
+    background: #f9c74f;
+    display: block;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+
+.box{
+    width: 300px;
+    background: #1d2557;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 0.3s ease;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.box:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.5);
+}
+
+.box-content{
+    padding: 20px;
+}
+
+.box-content h2{
+    font-size: 1.3rem;
+    color: #f9c74f;
+    margin-bottom: 15px;
+}
+
+.box-img{
+    width: 100%;
+    height: 180px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    margin-bottom: 18px;
+}
+
+.box-content p a{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.box-content p a:hover{
+    color: #f9c74f;
+}
+
+
+
+#contact{
+    min-height: 100vh;
+    padding: 80px 8%;
+    background: #0e1331;
+}
+
+.contact-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    margin-top: 50px;
+}
+
+/* Left Side - Form */
+
+.contact-form{
+    flex: 1;
+}
+
+.contact-form form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea{
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background: #1d2557;
+    color: white;
+    font-size: 1rem;
+    outline: none;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder{
+    color: #cfcfcf;
+}
+
+.contact-form textarea{
+    resize: none;
+}
+
+/* Button */
+
+.contact-form button{
+    width: 180px;
+    padding: 14px;
+    background: #f9c74f;
+    color: #111844;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.contact-form button:hover{
+    background: white;
+    transform: translateY(-5px);
+}
+
+/* Right Side */
+
+.contact-info{
+    flex: 1;
+}
+
+.contact-info h2{
+    font-size: 2rem;
+    color: #f9c74f;
+    margin-bottom: 20px;
+}
+
+.contact-info p{
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+
+.contact-info a{
+    color: white;
+    text-decoration: none;
+}
+
+.contact-info a:hover{
+    color: #a7a49c80;
+}
+
+.social-icons{
+    display: flex;
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.social-icons a{
+    width: 50px;
+    height: 50px;
+    background: #1d2557;
+    color: #f9c74f;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 1.5rem;
+
+    transition: 0.3s ease;
+}
+
+.social-icons a:hover{
+    background: #f9c74f;
+    color: #111844;
+    transform: translateY(-6px);
+}
+
+
+
+@media (max-width: 768px){
+
+    .contact-section{
+        flex-direction: column;
+    }
+
+    .contact-form,
+    .contact-info{
+        width: 100%;
+    }
+
+    .contact-form button{
+        width: 100%;
+    }
+}
+
+ hr{   
+    margin-top: 40px;
+    border: none;
+    height: 1px;
+    background: rgba(255,255,255,0.2);
+    margin-bottom: 20px;}
+
+
+    .footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-name,
+.footer-rights{
+    color: rgba(255,255,255,0.6);
+    font-size: 0.95rem;
+}
