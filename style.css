@@ -16,17 +16,26 @@ body {
     background: #111844;
     color: white;
     font-family: "Poppins", sans-serif;
+      padding-top: 90px;
 }
 
 
 
 /* header part */
-.nav {
+.nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     padding: 20px;
     background: #2d305f;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    z-index: 1000;
 }
 
 #logo a {
@@ -74,7 +83,7 @@ ul li a:hover {
 
 
 .hero {
-    flex: 6;
+    flex: 5;
     margin-left: 60px;
     justify-content: center;
     align-items: center;
@@ -85,15 +94,12 @@ ul li a:hover {
 
 
 .hero-image {
-    flex: 4;
+    flex: 5;
 
-    width: 320px;
-    height: 320px;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 50px;
-
-    background-image: url("images/hero image.png");
+    width: 420px;
+    height: 420px;
+    margin-right: 60px;
+    background-image: url("");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -111,37 +117,96 @@ ul li a:hover {
 }
 
 /* about section */
-.about-section {
+
+.about-section{
+    min-height: 100vh;
+    padding: 80px 8%;
+    
+
+}
+.about h1{
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.about-text{
+    color: #d6d6d6;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+/* Tab Titles */
+
+.tab-titles{
     display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-
-    height: 100vh;
-    gap: 20px;
-
+    gap: 40px;
+    margin-bottom: 25px;
 }
 
-.about {
-    flex: 6;
-    margin-left: 60px;
-    justify-content: center;
-    align-items: center;
-    padding-left: 50px;
-    padding-right: 50px;
+.tab-links{
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+    color: white;
+    transition: 0.3s;
+}
+
+.tab-links:hover{
+    color: #f9c74f;
+}
+
+/* Yellow line under active tab */
+
+.tab-links::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    background: #f9c74f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.3s;
+}
+
+.tab-links.active-link::after{
+    width: 100%;
+}
+
+/* Hide all tab contents */
+
+.tab-contents{
+    display: none;
+    
+}
+
+/* Show active tab */
+
+.tab-contents.active-tab{
+    display: block;
+}
+
+/* Remove default list style */
+
+.tab-contents ul{
+    list-style: none;
+    padding: 0;
+    display: block;
+    background: #111844;
+}
+
+.tab-contents ul li{
+    margin-bottom: 18px;
+    line-height: 1.6;
+}
+
+/* Yellow heading */
+
+.tab-contents ul li span{
+    color: #f9c74f;
+    font-weight: 600;
     font-size: 1rem;
-}
-
-.about-image{
-    flex:4;
-    margin-left: 60px;
-    height: 520px;
-    width: 320px;
-    background-image: url("images/harsh.png");
-    background-size: cover;
-    position:relative;
-    display:flex;
-    justify-content:center;
-    align-items:center;
 }
 
 
@@ -386,4 +451,54 @@ ul li a:hover {
 .footer-rights{
     color: rgba(255,255,255,0.6);
     font-size: 0.95rem;
+}
+
+
+
+.stats-section{
+
+    width: 70%;
+    height: 100px;
+    margin: 0 auto 80px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    background: #181d4d;
+
+    padding: 35px;
+
+    border: 1px solid rgba(255,255,255,0.15);
+
+    border-radius: 15px;
+}
+
+.stat-box{
+
+    text-align: center;
+}
+
+.stat-box h2{
+
+    font-size: 1.5rem;
+    color: #faf9f7;
+}
+
+.stat-box p{
+
+    margin-top: 8px;
+    font-size: 1.0rem;
+    color: #d6d6d6;
+}
+
+
+.stat-box{
+
+    transition: 0.3s ease;
+}
+
+.stat-box:hover{
+
+    transform: translateY(-8px);
 }
