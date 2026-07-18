@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 let tablinks = document.getElementsByClassName("tab-links");
 let tabcontents = document.getElementsByClassName("tab-contents");
 
@@ -29,3 +30,17 @@ function opentab(event, tabname){
     event.currentTarget.classList.add("active-link");
     document.getElementById(tabname).classList.add("active-tab");
 }
+=======
+var typed = new Typed("#element", {
+    strings: [
+        "C | C++ | Python",
+        "HTML | CSS | JavaScript",
+        "Frontend Web Development",
+    ],
+    typeSpeed: 60,
+    backSpeed: 60,
+    backDelay: 1000,
+    loop: true
+
+});
+>>>>>>> 67454c058de687badb45ed70888768835a91b149
